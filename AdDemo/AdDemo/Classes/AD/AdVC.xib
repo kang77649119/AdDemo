@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdVC" customModule="AdDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="adContainView" destination="VIg-Eq-GIL" id="Sb6-0r-M2t"/>
+                <outlet property="launchImg" destination="j0h-6r-T19" id="ew3-Xx-A7X"/>
+                <outlet property="timeBtn" destination="M6R-B2-NMy" id="ktO-aF-WOH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j0h-6r-T19"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIg-Eq-GIL">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6R-B2-NMy">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.32653556034482761" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="GP7-zx-l79"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="jumpAD:" destination="-1" eventType="touchUpInside" id="ERa-5M-dxo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VIg-Eq-GIL" secondAttribute="bottom" id="CMl-MO-eDf"/>
+                <constraint firstItem="M6R-B2-NMy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="H9N-yt-mvG"/>
+                <constraint firstItem="VIg-Eq-GIL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cfq-oS-bO6"/>
+                <constraint firstAttribute="bottom" secondItem="j0h-6r-T19" secondAttribute="bottom" id="h1d-BI-y7q"/>
+                <constraint firstItem="j0h-6r-T19" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sGC-uE-N2F"/>
+                <constraint firstAttribute="trailing" secondItem="VIg-Eq-GIL" secondAttribute="trailing" id="vWL-PH-GZK"/>
+                <constraint firstAttribute="trailing" secondItem="j0h-6r-T19" secondAttribute="trailing" id="wWS-dI-ui8"/>
+                <constraint firstItem="j0h-6r-T19" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yB1-v8-wuO"/>
+                <constraint firstAttribute="trailing" secondItem="M6R-B2-NMy" secondAttribute="trailing" constant="20" id="yDe-pX-jea"/>
+                <constraint firstItem="VIg-Eq-GIL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zyd-fd-9Ju"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-567" y="20"/>
+        </view>
+    </objects>
+</document>
